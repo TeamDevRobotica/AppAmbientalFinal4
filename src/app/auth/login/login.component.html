@@ -1,0 +1,17 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Login Form -->
+        <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" style="margin-top: 2rem">
+            <input type="text" id="login" class="fadeIn second" name="usuario" placeholder="usuario"
+                formControlName="user">
+            <input type="password" id="password" class="fadeIn third" placeholder="password" formControlName="pass" [ngClass]="{ 'is-invalid': submitted && f.pass.errors }"/>
+            
+            <input type="submit" class="fadeIn fourth" value="Ingresar" [disabled]="!profileForm.valid"
+                style="margin-top: 1rem">
+        </form>
+        <div>
+             <img src="https://educaciondigitalmisiones.com/camem/wp-content/uploads/2019/09/logo.png" width="150"
+                height="65" class="d-inline-block align-top" alt="" style="margin-bottom: 1rem;">
+        </div>
+    </div>
+</div>
