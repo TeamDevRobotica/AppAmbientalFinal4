@@ -11,11 +11,7 @@ import * as CanvasJS from 'src/canvasjs-2.3.2/canvasjs.min';
   styleUrls: ['./institucion.component.sass']
 })
 export class InstitucionComponent implements OnInit {
-<<<<<<< HEAD
   id;
-=======
-
->>>>>>> 026d0ab53eddd2aa6347f5bc65789e7e6aa7746f
   cue = [];
   institucion = [];
   // usuarios: Observable<any[]>;
@@ -39,10 +35,7 @@ export class InstitucionComponent implements OnInit {
     this.cue = this.authService.user;
     console.log("user " + this.cue[0].institucion.id);
     this.institucion = this.cue[0].institucion.descripcion;
-<<<<<<< HEAD
     this.id = this.cue[0].institucion.id;
-=======
->>>>>>> 026d0ab53eddd2aa6347f5bc65789e7e6aa7746f
 
     this.chart = new CanvasJS.Chart("chartContainer", {
       zoomEnabled: true,
