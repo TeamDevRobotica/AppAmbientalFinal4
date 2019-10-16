@@ -122,7 +122,7 @@ export class InstitucionComponent implements OnInit {
         yValueFormatString: "####.00",
         xValueFormatString: "hh:mm:ss TT",
         showInLegend: true,
-        name: "Pluviometro",
+        name: "Viento",
         dataPoints: this.dataPoints6
       },
       {
@@ -131,7 +131,7 @@ export class InstitucionComponent implements OnInit {
         yValueFormatString: "####.00",
         xValueFormatString: "hh:mm:ss TT",
         showInLegend: true,
-        name: "Viento",
+        name: "Pluviometro",
         dataPoints: this.dataPoints7
       }]
     });
@@ -243,8 +243,8 @@ export class InstitucionComponent implements OnInit {
         this.chart.options.data[2].legendText = " Humedad Suelo " + this.dataPoints3[this.dataPoints3.length - 1].y;
         this.chart.options.data[3].legendText = " Luz " + this.dataPoints4[this.dataPoints4.length - 1].y;
         this.chart.options.data[4].legendText = " Lluvia " + this.dataPoints5[this.dataPoints5.length - 1].y;
-        this.chart.options.data[5].legendText = " Pluviometro " + this.dataPoints6[this.dataPoints6.length - 1].y;
-        this.chart.options.data[6].legendText = " Viento " + this.dataPoints7[this.dataPoints7.length - 1].y;
+        this.chart.options.data[5].legendText = " Viento " + this.dataPoints6[this.dataPoints6.length - 1].y;
+        this.chart.options.data[6].legendText = " Pluviometro " + this.dataPoints7[this.dataPoints7.length - 1].y;
         this.chart.render();
       }
     );

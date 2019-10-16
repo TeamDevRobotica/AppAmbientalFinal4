@@ -4,8 +4,7 @@
         <form [formGroup]="profileForm" (ngSubmit)="onSubmit()" style="margin-top: 2rem">
             <input type="text" id="login" class="fadeIn second" name="usuario" placeholder="usuario"
                 formControlName="user">
-            <input type="password" id="password" class="fadeIn third" placeholder="password" formControlName="pass"
-                [ngClass]="{ 'is-invalid': submitted && f.pass.errors }" />
+            <input type="password" id="password" class="fadeIn third" placeholder="password" formControlName="pass">
 
             <input type="submit" class="fadeIn fourth" value="Ingresar" [disabled]="!profileForm.valid"
                 style="margin-top: 1rem">

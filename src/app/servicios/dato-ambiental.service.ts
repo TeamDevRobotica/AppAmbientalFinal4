@@ -24,11 +24,11 @@ export class DatoAmbientalService {
   }
 
   getDatosAmbientalesPorTipo(id: number): Observable<DatoAmbiental[][]> {
-    return this.http.get<DatoAmbiental[][]>(this.datoAmbientalUrl + "UltimosDatos/" +  '2019-09-10'/* DateUtils.mixedDateToDateString(new Date())*/ + '/' + id);
+    return this.http.get<DatoAmbiental[][]>(this.datoAmbientalUrl + "UltimosDatos/" +  /* '2019-09-10' */DateUtils.mixedDateToDateString(new Date()) + '/' + id);
   }
 
   getUltimoDatosAmbientalesPorTipo(id: number): Observable<DatoAmbiental[][]> {
-    return this.http.get<DatoAmbiental[][]>(this.datoAmbientalUrl + "UltimoDato/" +  '2019-09-10'/* DateUtils.mixedDateToDateString(new Date())*/ + '/' + id);
+    return this.http.get<DatoAmbiental[][]>(this.datoAmbientalUrl + "UltimoDato/" +  /* '2019-09-10' */DateUtils.mixedDateToDateString(new Date()) + '/' + id);
   }
 
   getDatoAmbiental(id: number): Observable<DatoAmbiental> {
